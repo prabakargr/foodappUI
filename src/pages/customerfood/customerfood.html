@@ -1,0 +1,57 @@
+<!--
+  Generated template for the CustomerfoodPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>customer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="details" text-center>
+        <h4>Choose the type of food preferene</h4>
+        <hr>
+    </div>
+    <!-- <form (submit)="doSubmit($event)" [formGroup]="langForm"> -->
+        <ion-list radio-group >
+    
+          <ion-item>
+            <ion-label>Andhra</ion-label>
+            <ion-radio value="Andhra" checked="true"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Kerala</ion-label>
+            <ion-radio value="Kerala"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Chettinadu</ion-label>
+            <ion-radio value="Chettinadu"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Cafe / Bakery / Dessert</ion-label>
+            <ion-radio value="Cafe"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>North India</ion-label>
+            <ion-radio value="North"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Briyani</ion-label>
+            <ion-radio value="Briyani"></ion-radio>
+          </ion-item>
+        </ion-list>
+      <!-- </form> -->
+    <div padding class="continue">
+        <button ion-button color="primary" block (click)="details()">Continue</button>
+      </div>
+      <div class="skip" text-center>
+        <h5 (click)="details()">Skip for now</h5>
+      </div>
+
+</ion-content>

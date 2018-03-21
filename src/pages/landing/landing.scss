@@ -1,0 +1,77 @@
+page-landing {
+    .aa{
+        margin-bottom: 0;
+        margin-left: 1rem;
+        font-weight: bold;
+    }
+    ion-toolbar p{
+        color: white;
+    }
+    select{
+        border: none;
+        width: 10rem;
+    }
+    .add{
+        color: white
+    }
+    .details{
+        h5,p{
+            margin: 0;
+        }
+    }
+    .rating{
+        p{
+            margin: 0;
+        font-size: 1rem;
+        }
+    
+    }
+    ion-slides{
+        height: 50%;
+    }
+    .swiper-slide{
+        width: 25rem !important;
+    }
+    .swiper-slide img{
+        padding:1rem;
+    }
+    .delivery{
+        .swiper-slide{
+            width: 12rem !important;
+        }
+        h2 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets{
+            bottom: 0;
+        }
+        h4{
+            margin-bottom: 0;
+        margin-left: 1rem;
+        }
+        background-color: gainsboro;
+    }
+    .near_you{
+        background-color: gainsboro;
+        p{  font-size: 1rem;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .swiper-slide {
+            width: 15rem !important;
+        }
+        h2 {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets{
+            bottom:-12px;
+        }
+        
+        
+    }
+}

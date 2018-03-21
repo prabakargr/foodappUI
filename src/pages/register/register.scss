@@ -1,0 +1,50 @@
+page-register {
+    .list-md {
+        margin: 16px;
+    }
+    .terms{
+        color:#9e9e9e;
+    }
+    .terms h6{
+        margin-bottom:  0;
+        font-size: 1.2rem;
+        line-height: 0;
+    }
+    ion-header, ion-footer{
+        color: #fff;
+        background-color: #2e5ec0;
+        
+    } 
+    
+    .item-ios.item-label-floating .text-input{
+        color: black;
+        font-weight: bolder;
+    }
+    .list-ios > .item-block:first-child{
+        border-top: none;
+    }
+    .bar-button-default-ios{
+        color: #fff;
+    }
+    .reg{
+        padding-top: 0;
+        }
+    .error
+    {
+        font-size: 1.5rem;
+    color:red;
+    }
+    .label-md{
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 1.2rem !important;
+    }
+   
+    .card-header-md + .card-content-md,{
+        padding-bottom: 0;
+    }
+    .text-input-md{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}

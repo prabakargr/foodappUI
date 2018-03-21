@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Food App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager>
+    <ion-slide>
+      <div class="imagecontainer">
+        <img src="../../assets/imgs/food01.png" alt=""/>
+      </div>
+      <h2>Your food is never wasted</h2>
+      <p>Share your food to anyone who wants to try it or share it to homeless kids.</p>
+    </ion-slide>
+    <ion-slide>
+        <div class="imagecontainer">
+            <img src="../../assets/imgs/food02.png" alt=""/>
+          </div>
+        <h2>Your food is never wasted</h2>
+        <p>Share your food to anyone who wants to try it or share it to homeless kids.</p>
+    </ion-slide>
+    <ion-slide>
+        <div class="imagecontainer">
+            <img src="../../assets/imgs/food03.png" alt=""/>
+          </div>
+        <h2>Your food is never wasted</h2>
+        <p>Share your food to anyone who wants to try it or share it to homeless kids.</p>
+    </ion-slide>
+  </ion-slides>
+  <button ion-button block (click)="gotostarted()">Get Started</button>
+  <button ion-button color="secondary" block clear>Already a member?<a (click)="gotologin()"> Login in</a></button>
+</ion-content>

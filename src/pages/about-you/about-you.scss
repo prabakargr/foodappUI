@@ -1,0 +1,22 @@
+page-about-you {
+    .swiper-slide{
+        width: 180px !important;
+       
+    }
+    ion-slides{
+        height: 50%;
+    }
+    .swiper-slide img{
+        padding: 1rem;
+    }
+        .about{
+        margin-top: 10rem;
+    }
+    .back-button.show-back-button{
+        color:#fff;
+    }
+    ion-app.md [padding] .scroll-content{
+        margin-top: 0;
+    }
+    
+}

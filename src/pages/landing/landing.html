@@ -1,0 +1,310 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons text-left>
+        <button ion-button block (click)="asap()">
+            <p>Asap</p>
+        </button>
+        <button ion-button block>
+            <p><ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon> Adyar</p>
+        </button>
+      </ion-buttons>
+      <ion-buttons end>
+        <button ion-button icon-only color="royal">
+          <ion-icon name="add" class="add"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="aa"><p>Let's hook up with a good lunch</p></div>
+    <ion-slides pager>
+      <ion-slide *ngFor="let slide of slides">
+        <img [src]="slide.image" class="slide-image"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/slides1.jpg" class="slide-image"/>
+      </ion-slide>
+    </ion-slides>
+      <ion-grid class="img-details">
+        <ion-row>
+            <ion-col col-8 class="relavence">
+                223 RESTAURANTS
+            </ion-col>
+            <ion-col col-4 class="list">
+                    <label class = "item item-input item-select">
+                            <select>
+                                <option>Relavance</option>
+                                <option>Cost for Two</option>
+                                <option>Delivery Timeing</option>
+                                <option>Rating</option>
+                              </select>
+                    </label>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4  class="images">
+            <img src="assets/imgs/food1.jpg" alt="">
+          </ion-col>
+          <ion-col col-8 class="details">
+            <h5>Food Name</h5>
+            <p>some information about food</p>
+            <hr>
+            <ion-row class="rating">
+                <ion-col col-4 text-left>
+                   <p><ion-icon name="star"></ion-icon> 3.5</p>
+                </ion-col>
+                <ion-col col-4 text-left>
+                   <p> 30 MINS</p>
+                </ion-col>
+                <ion-col col-4 text-left>
+                    <p>Rs.120 for Two</p>
+                </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+              <ion-col col-4  class="images">
+                <img src="assets/imgs/food2.jpg" alt="">
+              </ion-col>
+              <ion-col col-8 class="details">
+                <h5>Food Name</h5>
+                <p>some information about food</p>
+                <hr>
+                <ion-row class="rating">
+                    <ion-col col-4 text-left>
+                       <p><ion-icon name="star"></ion-icon> 3.5</p>
+                    </ion-col>
+                    <ion-col col-4 text-left>
+                       <p> 30 MINS</p>
+                    </ion-col>
+                    <ion-col col-4 text-left>
+                        <p>Rs.120 for Two</p>
+                    </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                    <ion-col col-4  class="images">
+                      <img src="assets/imgs/food3.jpg" alt="">
+                    </ion-col>
+                    <ion-col col-8 class="details">
+                      <h5>Food Name</h5>
+                      <p>some information about food</p>
+                      <hr>
+                      <ion-row class="rating">
+                          <ion-col col-4 text-left>
+                             <p><ion-icon name="star"></ion-icon> 3.5</p>
+                          </ion-col>
+                          <ion-col col-4 text-left>
+                             <p> 30 MINS</p>
+                          </ion-col>
+                          <ion-col col-4 text-left>
+                              <p>Rs.120 for Two</p>
+                          </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                        <ion-col col-4  class="images">
+                          <img src="assets/imgs/food4.jpg" alt="">
+                        </ion-col>
+                        <ion-col col-8 class="details">
+                          <h5>Food Name</h5>
+                          <p>some information about food</p>
+                          <hr>
+                          <ion-row class="rating">
+                              <ion-col col-4 text-left>
+                                 <p><ion-icon name="star"></ion-icon> 3.5</p>
+                              </ion-col>
+                              <ion-col col-4 text-left>
+                                 <p> 30 MINS</p>
+                              </ion-col>
+                              <ion-col col-4 text-left>
+                                  <p>Rs.120 for Two</p>
+                              </ion-col>
+                          </ion-row>
+                        </ion-col>
+                      </ion-row>
+          </ion-grid>
+          <hr>
+          <div class="delivery">
+            <h4>Discover</h4>
+              <ion-slides pager>
+                  <ion-slide *ngFor="let slide of slidess">
+                    <img [src]="slide.image" class="slide-image"/>
+                    <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+                    <p [innerHTML]="slide.description"></p>
+                  </ion-slide>
+              </ion-slides>
+              <hr>
+          </div>
+          <ion-grid class="img-details">
+                      <ion-row>
+                            <ion-col col-4  class="images">
+                              <img src="assets/imgs/food5.jpg" alt="">
+                            </ion-col>
+                            <ion-col col-8 class="details">
+                              <h5>Food Name</h5>
+                              <p>some information about food</p>
+                              <hr>
+                              <ion-row class="rating">
+                                  <ion-col col-4 text-left>
+                                     <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                  </ion-col>
+                                  <ion-col col-4 text-left>
+                                     <p> 30 MINS</p>
+                                  </ion-col>
+                                  <ion-col col-4 text-left>
+                                      <p>Rs.120 for Two</p>
+                                  </ion-col>
+                              </ion-row>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                                <ion-col col-4  class="images">
+                                  <img src="assets/imgs/food6.jpg" alt="">
+                                </ion-col>
+                                <ion-col col-8 class="details">
+                                  <h5>Food Name</h5>
+                                  <p>some information about food</p>
+                                  <hr>
+                                  <ion-row class="rating">
+                                      <ion-col col-4 text-left>
+                                         <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                      </ion-col>
+                                      <ion-col col-4 text-left>
+                                         <p> 30 MINS</p>
+                                      </ion-col>
+                                      <ion-col col-4 text-left>
+                                          <p>Rs.120 for Two</p>
+                                      </ion-col>
+                                  </ion-row>
+                                </ion-col>
+                              </ion-row>
+                              <ion-row>
+                                    <ion-col col-4  class="images">
+                                      <img src="assets/imgs/food7.jpg" alt="">
+                                    </ion-col>
+                                    <ion-col col-8 class="details">
+                                      <h5>Food Name</h5>
+                                      <p>some information about food</p>
+                                      <hr>
+                                      <ion-row class="rating">
+                                          <ion-col col-4 text-left>
+                                             <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                          </ion-col>
+                                          <ion-col col-4 text-left>
+                                             <p> 30 MINS</p>
+                                          </ion-col>
+                                          <ion-col col-4 text-left>
+                                              <p>Rs.120 for Two</p>
+                                          </ion-col>
+                                      </ion-row>
+                                    </ion-col>
+                                  </ion-row>
+                                  <ion-row>
+                                        <ion-col col-4  class="images">
+                                          <img src="assets/imgs/food8.jpg" alt="">
+                                        </ion-col>
+                                        <ion-col col-8 class="details">
+                                          <h5>Food Name</h5>
+                                          <p>some information about food</p>
+                                          <hr>
+                                          <ion-row class="rating">
+                                              <ion-col col-4 text-left>
+                                                 <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                              </ion-col>
+                                              <ion-col col-4 text-left>
+                                                 <p> 30 MINS</p>
+                                              </ion-col>
+                                              <ion-col col-4 text-left>
+                                                  <p>Rs.120 for Two</p>
+                                              </ion-col>
+                                          </ion-row>
+                                        </ion-col>
+                                      </ion-row>
+                                      <hr>
+                    </ion-grid>
+                    <div class="near_you">
+                      <h4 text-center>Super fast Delivery</h4>
+                      <p text-center>Lightening Fast Delivery in 45 Mins and less. T & C Apply</p>
+                        <ion-slides pager>
+                            <ion-slide *ngFor="let slide of near_you">
+                              <img [src]="slide.image" class="slide-image"/>
+                              <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+                              <p [innerHTML]="slide.description"></p>
+                            </ion-slide>
+                        </ion-slides>
+                        <hr>
+                    </div>
+                    <ion-grid  class="img-details">
+                                      <ion-row>
+                                            <ion-col col-4  class="images">
+                                              <img src="assets/imgs/food8.jpg" alt="">
+                                            </ion-col>
+                                            <ion-col col-8 class="details">
+                                              <h5>Food Name</h5>
+                                              <p>some information about food</p>
+                                              <hr>
+                                              <ion-row class="rating">
+                                                  <ion-col col-4 text-left>
+                                                     <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                                  </ion-col>
+                                                  <ion-col col-4 text-left>
+                                                     <p> 30 MINS</p>
+                                                  </ion-col>
+                                                  <ion-col col-4 text-left>
+                                                      <p>Rs.120 for Two</p>
+                                                  </ion-col>
+                                              </ion-row>
+                                            </ion-col>
+                                          </ion-row>
+                                          <ion-row>
+                                              <ion-col col-4  class="images">
+                                                <img src="assets/imgs/food6.jpg" alt="">
+                                              </ion-col>
+                                              <ion-col col-8 class="details">
+                                                <h5>Food Name</h5>
+                                                <p>some information about food</p>
+                                                <hr>
+                                                <ion-row class="rating">
+                                                    <ion-col col-4 text-left>
+                                                       <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                                    </ion-col>
+                                                    <ion-col col-4 text-left>
+                                                       <p> 30 MINS</p>
+                                                    </ion-col>
+                                                    <ion-col col-4 text-left>
+                                                        <p>Rs.120 for Two</p>
+                                                    </ion-col>
+                                                </ion-row>
+                                              </ion-col>
+                                            </ion-row>
+                                            <ion-row>
+                                                  <ion-col col-4  class="images">
+                                                    <img src="assets/imgs/food7.jpg" alt="">
+                                                  </ion-col>
+                                                  <ion-col col-8 class="details">
+                                                    <h5>Food Name</h5>
+                                                    <p>some information about food</p>
+                                                    <hr>
+                                                    <ion-row class="rating">
+                                                        <ion-col col-4 text-left>
+                                                           <p><ion-icon name="star"></ion-icon> 3.5</p>
+                                                        </ion-col>
+                                                        <ion-col col-4 text-left>
+                                                           <p> 30 MINS</p>
+                                                        </ion-col>
+                                                        <ion-col col-4 text-left>
+                                                            <p>Rs.120 for Two</p>
+                                                        </ion-col>
+                                                    </ion-row>
+                                                  </ion-col>
+                                                </ion-row>
+                              </ion-grid>
+  </ion-content>
+  
+  <ion-footer>
+   
+  </ion-footer>

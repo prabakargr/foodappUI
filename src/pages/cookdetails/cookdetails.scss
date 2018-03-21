@@ -1,0 +1,13 @@
+page-cookdetails {
+    
+    .back-button.show-back-button{
+        color:#fff;
+    }
+    .item-ios{
+        margin-bottom: 2rem;
+    }
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+        border-bottom-color: #0952e7;
+        box-shadow: inset 0 -1px 0 0 #0b57f2;
+    }
+}

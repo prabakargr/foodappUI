@@ -1,0 +1,47 @@
+<!--
+  Generated template for the CookdetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>cook</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="details" text-center>
+    <h4>Fill in some details about you</h4>
+  </div>
+  <form novalidate  [formGroup]="user">
+      <ion-item>
+        <ion-input type="number" placeholder="How many years of cooking experience?"  formControlName="experience"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input type="text" placeholder="What's your day job?" formControlName="dayJob"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="text" placeholder="How offten do you post?" formControlName="offtenPost"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-input type="number" placeholder="phone number" formControlName="phone"></ion-input>
+      </ion-item>
+    
+      <div padding>
+        <button ion-button color="primary" block type="submit" (click)="cookdetails()">Continue</button>
+      </div>
+    </form>
+      <div class="skip" text-center>
+        <h5 (click)="cookdetails()">Skip for now</h5>
+      </div>
+
+</ion-content>
+

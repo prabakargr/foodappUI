@@ -1,0 +1,71 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title text-center>Register</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+<ion-content class="log">
+  <form novalidate (ngSubmit)="onRegister()" [formGroup]="user"> 
+    <ion-list>
+      <ion-item>
+        <ion-label floating><ion-icon name="person"></ion-icon> Username</ion-label>
+        <ion-input type="text"  formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="( user.get('name').hasError('minlength') || user.get('name').hasError('required') ) && user.get('name').touched">
+        <div class="error" *ngIf="user.get('name').hasError('required') && user.get('name').touched">
+        *Name is required
+        </div>
+        <div class="error" *ngIf="user.get('name').hasError('minlength') && user.get('name').touched">
+        *Minimum of 4 characters
+        </div>
+      </ion-item>
+      <ion-item>
+          <ion-label floating><ion-icon name="mail"></ion-icon> EmailId</ion-label>
+          <ion-input type="email" value="" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="( user.get('email').hasError('required') || user.get('email').hasError('pattern') ) && user.get('email').touched">
+
+        <div class="error" *ngIf="user.get('email').hasError('required') && user.get('email').touched">
+        *Email is required
+        </div>
+        
+        <div class="error" *ngIf="user.get('email').hasError('pattern') && user.get('email').touched">
+        *Please enter valid email
+        </div> 
+      </ion-item>
+      <ion-item>
+        <ion-label floating><ion-icon name="lock"></ion-icon> Password</ion-label>
+        <ion-input type="password" value="" formControlName="pass"></ion-input>
+      </ion-item>
+      <ion-item no-lines *ngIf="( user.get('pass').hasError('minlength') || user.get('pass').hasError('required') ) && user.get('pass').touched">
+        <div class="error" *ngIf="user.get('pass').hasError('required') && user.get('pass').touched">
+        *Password is required
+        </div>
+        <div class="error" *ngIf="user.get('pass').hasError('minlength') && user.get('pass').touched">
+        *Minimum of 6 characters
+        </div>
+      </ion-item>
+    </ion-list>
+
+  <div padding>
+    <button type="submit" ion-button color="primary" block class="reg" [disabled]="user.invalid">Register</button>
+  </div>
+</form>
+  <div text-center class="terms">
+      Clicking register will consider as accepting the terms and condition
+  </div>
+  <div text-center class="terms">
+     <h6>OR</h6>
+  </div>
+  <div padding>
+      <button ion-button color="primary" block>Signin with facebook</button>
+  </div>
+  <div text-center class="terms">
+      We wont post anything without asikng u first
+  </div>
+</ion-content>
+<ion-footer>
+
+</ion-footer>
