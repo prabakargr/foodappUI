@@ -6,29 +6,28 @@
 -->
 <ion-header>
 
-    <ion-navbar>
-      <ion-title>Customer</ion-title>
-    </ion-navbar>
-  
-  </ion-header>
-  
-  <ion-content padding>
-      <div class="details" text-center>
-          <h4>Location</h4>
-      </div>
-     
-        <ion-searchbar (ionInput)="getItems($event)" (click)="openModal({charNum: 0})">
+  <ion-navbar>
+    <ion-title>Customer</ion-title>
+  </ion-navbar>
 
-        </ion-searchbar>
-     
-      <img src="../../assets/imgs/map.png" alt=""/>
-      <div padding class="continue">
-        <button ion-button color="primary" block>Continue</button>
-      </div>
-      <div class="skip" text-center>
-          <h5 (click)="details()">Skip for now</h5>
-      </div>  
-        
-  
-  </ion-content>
-  
+</ion-header>
+
+<ion-content padding>
+    <div class="details" text-center>
+        <h4>Location</h4>
+    </div>
+   
+      <ion-searchbar (ionInput)="getItems($event)">
+
+      </ion-searchbar>
+   
+    <img src="../../assets/imgs/map.png" alt=""/>
+    <div padding class="continue">
+      <button ion-button color="primary" block (click)="details()">Continue</button>
+    </div>
+    <div class="skip" text-center>
+        <h5 (click)="details()">Skip for now</h5>
+    </div>  
+      
+
+</ion-content>

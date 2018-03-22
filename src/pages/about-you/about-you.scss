@@ -1,13 +1,10 @@
 page-about-you {
-    .swiper-slide{
-        width: 180px !important;
-       
+    input[type="radio"] {
+        margin-left: 4rem;
+        margin-top: 2rem;
     }
-    ion-slides{
-        height: 50%;
-    }
-    .swiper-slide img{
-        padding: 1rem;
+    .imagecontainers img{
+        width: 88%;
     }
         .about{
         margin-top: 10rem;

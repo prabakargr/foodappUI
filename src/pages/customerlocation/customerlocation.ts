@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';import { IonicPage, NavController, ModalController, Platform, NavParams, ViewController} from 'ionic-angular';
 import { ModalContentPage } from '../modal-content/modal-content';
+import{ LoginPage } from '../login/login';
 /**
  * Generated class for the CustomerlocationPage page.
  *
@@ -25,7 +26,9 @@ export class CustomerlocationPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CustomerlocationPage');
   }
-  
+  details(){
+    this.navCtrl.push(LoginPage);
+  }
   
 
 }

@@ -18,23 +18,26 @@
     <h4>How do you want to start?</h4>
     <p>You can switch profile anytime later</p>
   </div>
-  <ion-slides pager>
-    <ion-slide>
-      <div class="imagecontainer">
-        <img src="../../assets/imgs/chef.png" alt=""/>
-      </div>
-      <ion-radio  value="go"></ion-radio>
-      <h2>Cook</h2>
-    </ion-slide>
-    <ion-slide>
-        <div class="imagecontainer">
-            <img src="../../assets/imgs/customer.png" alt=""/>
+  <form class="example" method="get" action="#" (ngSubmit)="aboutYou()" [formGroup]="about">  <div radio-group>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <div class="imagecontainer">
+            <img src="../../assets/imgs/chef.png" alt=""/>
+            <input type="radio" id="cook"  aria-required="true" value="cook" formControlName="Role"> <label for="i">Cook</label>
           </div>
-          <ion-radio  value="go"></ion-radio>
-        <h2>Customer</h2>
-    </ion-slide>
-  </ion-slides>
-  <div padding>
-      <button ion-button color="primary" block (click)="details()">Continue</button>
+        </ion-col>
+        <ion-col col-6>   
+          <div class="imagecontainers">
+            <img src="../../assets/imgs/customer.png" alt=""/>
+            <input type="radio" id="customer"  aria-required="true"  value="customer" formControlName="Role"> <label for="i">Customer</label>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+  <div padding>
+      <button ion-button color="primary" block >Continue</button>
+  </div>
+</form>
 </ion-content>

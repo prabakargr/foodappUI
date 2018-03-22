@@ -6,6 +6,7 @@ import { FormControl, FormGroup, Validators,ValidatorFn,AbstractControl, FormBui
 import{ CookdetailsPage } from '../../pages/cookdetails/cookdetails';
 import{ CookdishPage } from '../../pages/cookdish/cookdish';
 import{ShareService} from '../../sharedservices/shareservice';
+import{ LoginPage } from '../login/login';
 
 /**
  * Generated class for the CooklocationPage page.
@@ -33,7 +34,7 @@ export class CooklocationPage {
 
   
   loactiondetails(){
-    this.navCtrl.push(CustomerfoodPage);
+    this.navCtrl.push(LoginPage);
     this.loacatedetails=this.cooklocation.value;
     console.log(this.loacatedetails);
     this.cookdetails=this.shareservice.getvalue();
